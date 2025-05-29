@@ -1,0 +1,32 @@
+# GitHub Action to automatically mark issues and pull requests as stale
+# and close them after a certain period of inactivity.
+
+name: Mark stale issues and pull requests
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"  # ⚠️ This runs every 10 minutes — for testing only. Change to daily/hourly in production.
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest  # Use the latest Ubuntu runner
+
+    steps:
+      - uses: actions/stale@v3  # Use the official stale action from GitHub Marketplace
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}  # Built-in token to authenticate the action
+
+          # Message posted when marking an issue as stale
+          stale-issue-message: >
+            This bug report has not seen any activity in a while. If the issue is still relevant,
+            please comment on it or the issue will be automatically closed. This way,
+            the issue tracker can be kept clean. Thank you!
+
+          stale-issue-label: 'stale'  # Label added to stale issues
+
+          days-before-stale: 90  # Mark issues as stale after 90 days of inactivity
+          days-before-close: 15  # Close stale issues 15 days after being marked
+
+          # Issues with any of these labels will never be marked as stale
+          exempt-issue-labels: 'priority, never-stale, improvement'
+
