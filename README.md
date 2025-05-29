@@ -16,6 +16,8 @@ When opening a new issue, please select one of the following:
 
 If none of the templates fit, you may still open a blank issue if necessary.
 
+### [Create a New Issue](https://github.com/VieInnovation/issues/issues/new/choose)
+
 ## Inactive Issue Policy
 
 To keep our issue tracker focused and clutter-free, we automatically mark inactive issues as `stale` after 90 days of no activity. These issues will be closed after 15 more days if there is still no response.
@@ -27,7 +29,7 @@ Issues with labels like `priority`, `never-stale`, or `improvement` are exempt f
 We are building out our community channels. For now:
 
 - General discussion and support may take place directly in GitHub issues.
-<!-- - Visit [vieinnovation.dev](https://vieinnovation.dev) (coming soon) to learn more about us. -->
+- Visit [vieinnovation.dev](https://vieinnovation.dev) (coming soon) to learn more about us.
 - Check back soon for our official Heartz Discord (coming soon).
 
 ## Repository Highlights
