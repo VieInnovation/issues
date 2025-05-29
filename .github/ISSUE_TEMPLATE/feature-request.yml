@@ -1,0 +1,62 @@
+name: 💡 Feature Request
+description: Suggest a new idea, improvement, or enhancement for Heartz
+labels: [enhancement, feature request]
+body:
+  - type: checkboxes
+    attributes:
+      label: ✅ Checklist
+      description: Please complete the following before submitting.
+      options:
+        - label: I have **checked [open and recently closed issues](https://github.com/VietInnovation/issues/issues?q=is%3Aissue)** to ensure this feature hasn’t already been requested.
+          required: true
+        - label: This is a **feature request**, not a bug report.
+          required: true
+
+  - type: input
+    attributes:
+      label: Feature Title
+      placeholder: e.g., Collaborative playlist creation
+
+  - type: textarea
+    attributes:
+      label: Describe the feature
+      description: Clearly explain what the feature is and how it would work.
+      placeholder: |
+        I’d like the ability to create playlists with friends where each participant can add or remove tracks in real time...
+
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Use case / Why this feature is needed
+      description: Describe the problem this feature solves or the benefit it adds to Heartz users.
+      placeholder: |
+        This would make Heartz more social and collaborative, letting users enjoy building playlists together in real time.
+
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Suggested implementation (optional)
+      description: Any ideas for how the feature could be implemented? UI/UX details, inspiration from other apps, etc.
+      placeholder: |
+        Maybe add a "Collaborate" toggle when creating a playlist, similar to Spotify’s collaboration feature...
+
+  - type: dropdown
+    attributes:
+      label: Priority
+      description: How important is this feature to you?
+      options:
+        - 🚀 Must-have
+        - 👍 Nice-to-have
+        - 🤔 Just an idea
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Additional context
+      description: Anything else we should know? Links, screenshots, or references welcome.
+

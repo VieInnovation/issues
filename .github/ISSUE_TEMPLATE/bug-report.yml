@@ -1,0 +1,73 @@
+name: 🐛 Bug Report
+description: Report unexpected behavior or issues in Heartz
+labels: [bug]
+body:
+  - type: checkboxes
+    attributes:
+      label: ✅ Checklist
+      description: Please complete all items before submitting. Incomplete reports may be closed without review.
+      options:
+        - label: I have **checked [open and recently closed issues](https://github.com/VieInnovation/issues/issues?q=is%3Aissue)** to make sure this hasn’t been reported already.
+          required: true
+        - label: I am using the **latest version** of Heartz (web/app).
+          required: true
+        - label: I am **not using any third-party tools or plugins** that modify Heartz.
+          required: true
+        - label: I am certain this is a **bug**, not a feature request.
+          required: true
+
+  - type: input
+    attributes:
+      label: Device and OS
+      placeholder: e.g., iPhone 13, iOS 17 / Windows 10, Chrome 123
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: App version (if applicable)
+      placeholder: e.g., Heartz 1.4.2 (Mobile) or Web version
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of the issue.
+      placeholder: When opening a playlist, the app crashes after pressing play...
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Steps to reproduce
+      description: Provide specific steps so we can reproduce the issue.
+      placeholder: |
+        1. Log in to Heartz
+        2. Go to "My Playlists"
+        3. Select a song and press play
+        4. App crashes
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+      placeholder: The song plays smoothly without crashing.
+
+  - type: textarea
+    attributes:
+      label: Screenshots / Recordings (if applicable)
+      description: Attach any images or videos that help illustrate the issue.
+
+  - type: textarea
+    attributes:
+      label: Console logs (if applicable)
+      description: For web issues, press F12 → Console tab → copy or screenshot any errors.
+
+  - type: textarea
+    attributes:
+      label: Additional context
+      description: Add any other relevant context or info to help us investigate further.
+

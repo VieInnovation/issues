@@ -1,0 +1,12 @@
+blank_issues_enabled: true  # Allows users to open issues without using a template
+
+# Contact links are optional. You can add them when you have an official Discord or website.
+# For now, you can leave this section out or keep it with placeholder URLs (not recommended if repo is public).
+
+# contact_links:
+#   - name: Heartz Community Discord
+#     url: https://example.com/discord  # TODO: Replace with real Discord invite link when available
+#     about: Have a quick question or want to discuss features? Join the official Heartz Discord community.
+#   - name: VieInnovation Website
+#     url: https://example.com  # TODO: Replace with official website URL once launched
+#     about: Visit our team’s homepage to learn more about our mission and other projects.
