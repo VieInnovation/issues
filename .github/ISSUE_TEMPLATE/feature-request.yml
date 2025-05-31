@@ -1,4 +1,5 @@
-name: 💡 Feature Request
+# name: 💡 Feature Request
+name: Feature Request
 description: Suggest a new idea, improvement, or enhancement for Heartz
 labels: [enhancement, feature request]
 body:
